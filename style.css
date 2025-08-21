@@ -442,7 +442,7 @@ html.splash-open, body.splash-open { overflow: hidden; }
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "quote image";
-  gap: 2rem;
+/*   gap: 2rem; */
 }
 
 
@@ -867,4 +867,5 @@ html.menu-open, body.menu-open{ overflow: hidden; }
 @media (min-width: 901px){
   .gallery-pin { position: static; top: auto; }
 }
+
 
