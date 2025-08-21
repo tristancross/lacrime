@@ -448,7 +448,7 @@ html.splash-open, body.splash-open { overflow: hidden; }
 
 
 .derm--quote--section{
-  border-right: 1px solid var(--pill);
+  border-right: 2px solid var(--pill);
   padding: 3rem;
 
 }
@@ -867,3 +867,4 @@ html.menu-open, body.menu-open{ overflow: hidden; }
 @media (min-width: 901px){
   .gallery-pin { position: static; top: auto; }
 }
+
