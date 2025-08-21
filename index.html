@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lacrimé Serum │ Whole</title>
+
+  <!-- Optional fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Splash / Preload -->
+<!-- Splash / Preload -->
+<div id="splash" class="splash" role="dialog" aria-modal="true" aria-labelledby="splash-title">
+  <div class="splash-inner">
+    <img class="splash-logo" src="img/lacrimeLabelWhite.png" alt="Lacrimé" />
+    <button id="splashEnter" class="splash-btn" type="button" aria-label="Enter site">Enter</button>
+  </div>
+</div>
+
+<header class="site-header">
+  <!-- Top ticker (two-strip, seamless loop) -->
+  <div class="top-bar">
+    <div class="ticker-lane">
+      <div class="ticker-strip strip-a">
+        <span>physical and emotional equilibrium</span>
+        <span>we are everything we need</span>
+        <span>free shipping on all orders over $50</span>
+      </div>
+      <div class="ticker-strip strip-b">
+        <span>physical and emotional equilibrium</span>
+        <span>we are everything we need</span>
+        <span>free shipping on all orders over $50</span>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Main header -->
+
+<!-- Slide-in mobile menu -->
+<div id="mobileMenu" class="mobile-menu" hidden>
+  <div class="mobile-menu__panel" role="dialog" aria-modal="true" aria-labelledby="mobileMenuTitle">
+    <div class="mobile-menu__top">
+      <span id="mobileMenuTitle" class="mobile-menu__title">Menu</span>
+      <button class="mobile-close" id="menuClose" aria-label="Close menu">×</button>
+    </div>
+    <nav class="mobile-links" id="mobileLinks"></nav>
+  </div>
+</div>
+
+  <div class="main-header fx-tears">
+    <div class="hamburger-holder">
+      <button class="hamburger" id="menuToggle"
+          aria-controls="mobileMenu"
+          aria-expanded="false"
+          aria-label="Open menu">
+    <span></span><span></span><span></span>
+    </button>
+    </div>
+    <nav class="nav-left">
+      <a href="#">Shop</a>
+      <a href="#">Story</a>
+      <a href="#">Science</a>
+    </nav>
+
+    <div class="brand">
+      <img id="logoImage" class="logo-image" src="img/lacrimeLabel.png" alt="Product hero" />
+    </div>
+
+    <nav class="nav-right">
+      <a href="#">Bag (0)</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+
+  <!-- ROW 1: Product (2 cols) -->
+  <section class="row row--product" id="product-row">
+
+    <!-- Left column: gallery (sticky on desktop) -->
+    <div class="col col--media">
+      <div class="gallery-pin">
+        <div class="block gallery-block" id="gallery">
+          <img id="mainImage" class="main-image" src="imgAnim/0000.png" alt="Lacrimé Serum bottle" />
+
+        </div>
+      </div>
+    </div>
+
+     <div class="divider"></div>
+
+    <!-- Right column: details -->
+    <div class="col col--details">
+      <article class="block head-block">
+        <div class="product-main-info">
+          <div class="title-and-rating">
+            <h1 class="title">LACRIMÉ SERUM</h1>
+            <div class="rating-row" aria-label="4.8 out of 5">
+              <span class="stars">★★★★★</span><span class="count"> (51)</span>
+            </div>
+          </div>
+          <div class="price-top">$60.00</div>
+        </div>
+
+        <hr class="rule" />
+
+        <p class="lead">Juvenile Tear Concentrate</p>
+        <p class="copy">
+          Naturally occurring anti-bacterial enzymes derived from human tears, bridging the gap between physical and emotional wellness. The novel blend of ethically-sourced bioelements and standard natural extracts repair the skin and the emotional terrain beneath it.
+        </p>
+        <p>
+          Developed by researchers, dermatologists, and somatic therapists, the serum is intended as a daily ritual for the body and mind. When applied, the skin barrier is gradually restored, sun damage is eased through accelerated cellular turnover, and the lacrimation fluid supports compassion.
+        </p>
+
+        <div class="pills">
+          <div><span class="pill-dot">▪</span> Cleansing</div>
+          <div><span class="pill-dot">▪</span> Repairing</div>
+          <div><span class="pill-dot">▪</span> Emoting</div>
+        </div>
+
+        <div class="cta-row">
+          <button class="btn btn-primary">Add to bag</button>
+          <button class="btn btn-outline">Buy it now</button>
+        </div>
+      </article>
+
+<section class="block tabs" id="details">
+  <div class="tabs-nav" role="tablist" aria-label="Product details">
+    <!-- <button class="tab is-active" role="tab" aria-selected="true" aria-controls="panel-desc" id="tab-desc">Description</button> -->
+    <h1 class="tab" role="tab" aria-selected="false" aria-controls="panel-ingredients" id="tab-ingredients">Ingredients</h1>
+    <h1 class="tab" role="tab" aria-selected="false" aria-controls="panel-benefits" id="tab-benefits">Benefits</h1>
+    <h1 class="tab" role="tab" aria-selected="false" aria-controls="panel-how" id="tab-how">How To Use</h1>
+    <span class="tab-underline" aria-hidden="true"></span>
+  </div>
+
+  <div class="tab-panels">
+    <!-- <section class="tab-panel is-active" role="tabpanel" id="panel-desc" aria-labelledby="tab-desc">
+      <p>This pH-balanced cleanser uses a soap-free, gentle cleansing complex to remove impurities… Size: 3.3 fl oz.</p>
+    </section> -->
+
+    <section class="tab-panel" role="tabpanel" id="panel-benefits" aria-labelledby="tab-benefits" hidden>
+        <p>The serum is formulated with certified organic ingredients like Leucine Enkephalin, electrolytes, and mucin.</p>
+        <p>These groundbreaking bioactive compounds are paired with a clinical blend of collagen peptides, mandelic acid, hyaluronic acid, vitamin C, B5, and niacinamide.</p>
+        <p>Every ingredient in Lacrimé has been selected for its ability to restore, regulate, and rejuvenate both physiologically and emotionally.</p>
+    </section>
+
+    <section class="tab-panel" role="tabpanel" id="panel-how" aria-labelledby="tab-how" hidden>
+      <p>Our skin serum is best administered as a self-soothing and revitalizing ritual each morning.</p>
+ <ol id="application-guide-instructions">
+  <li class="application-instruction">Tilt the Lacrimé serum tincture once for the best blend of physical and emotional renewal.</li>
+  <li class="application-instruction"> Apply two to three drops below each eye.</li>
+  <li class="application-instruction">Locate your hands’ energy meridians - the flat area where your thumb and index knuckle join in a fist - and pat the serum until spread evenly.</li>
+  <li class="application-instruction">Feel the balance of Lacrimé.</li></ol>
+    </section>
+
+    <section class="tab-panel" role="tabpanel" id="panel-ingredients" aria-labelledby="tab-ingredients" hidden>
+           <ul>
+        <li>Juvenile tears</li>
+        <li>Leucine enkephalin</li>
+        <li>Hyaluronic acid</li>
+        <li>Vitamin B5</li>
+        <li>Mucin</li>
+      </ul>
+    </section>
+  </div>
+</section>
+<article class="block science-block">
+  <h1 class="title">THE SCIENCE</h1>
+
+  <p>According to a <b>clinical trial</b>, after using Lacrimé Serum:</p>
+
+  <ul class="science-stats">
+    <li>90% Felt improvement in <b>skin tone</b> and <b>texture.</b></li>
+    <li>92% Noticed <b>softer</b> <em>looking</em> skin.</li>
+    <li>89% Had little to <b>no inflammation</b> of the skin.</li>
+    <li>95% Felt <b>more compassionate</b> about <em>humanity.</em></li>
+  </ul>
+</article>
+
+
+      <!-- <article class="block review-block">
+        <div class="rating-row"><span class="stars">★★★★★</span> <strong>Perfect everyday serum</strong></div>
+        <p>Leaves a calm, hydrated feel and layers well under sunscreen. — Jess, London</p>
+      </article> -->
+    </div>
+  </section>
+  <section class="row row--images">
+    <img src="img/1.png" alt="">
+    <img src="img/3.png" alt="">
+    <img src="img/4.png" alt="">
+    <img src="img/2.png" alt="">
+
+  </section>
+
+  <!-- ROW 2: Quote -->
+  <section class="row row--quote">
+    <blockquote class="quote">
+      <span style="text-transform: uppercase;">
+        "Lacrimé is the only serum I’ve ever used that felt like it was listening back. It’s not just skincare, it’s a boundary ritual.”
+      </span>
+      <cite>— Cameron Diaz</cite>
+    </blockquote>
+  </section>
+
+  <section class="derm">
+      <div class="derm--quote--section">
+        <div class="derm--quote">
+          <h1 class="title">DERMATOLOGIST <span>RECOMMENDED</span></h1>
+          <div class="dr--davis--quote">
+"In my professional opinion, I believe Lacrimé Serum may offer beneficial results when used as part of a standard skincare routine."
+          </div>
+        </div>
+      </div>
+      <div class="derm--img">
+        <img src="img/drdavis.png" alt="">
+        <div class="derm--title">Joyce Davis MD</div>
+        <div class="derm--credentials">Board Certified Dermatologist</div>
+         <div class="derm--products">"I love products. I love recommending products."</div>
+      </div>
+  </section>
+
+  <!-- ROW 3: Related -->
+  <!-- <section class="row row--related" id="related">
+    <div class="related-inner">
+      <h3>You may also like</h3>
+      <div class="related-grid">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?q=80&w=800&auto=format&fit=crop" alt="Hydrating Cleanser" />
+          <div class="inner">
+            <div>Hydrating Cleanser</div>
+            <div class="price-sm">£16.00</div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1600180758890-6b94519a8ba6?q=80&w=800&auto=format&fit=crop" alt="Vitamin C Serum" />
+          <div class="inner">
+            <div>Vitamin C Serum</div>
+            <div class="price-sm">£28.00</div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?q=80&w=800&auto=format&fit=crop" alt="Barrier Cream" />
+          <div class="inner">
+            <div>Barrier Cream</div>
+            <div class="price-sm">£22.00</div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1585386959984-a41552231659?q=80&w=800&auto=format&fit=crop" alt="Overnight Mask" />
+          <div class="inner">
+            <div>Overnight Mask</div>
+            <div class="price-sm">£26.00</div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section> -->
+</main>
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__cols">
+      <div class="footer__col">
+        <h4 class="footer__hd">WHOLE:</h4>
+        <ul class="footer__list">
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Our Science</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+
+      <!-- <div class="footer__col">
+        <h4 class="footer__hd">BOUTIQUE:</h4>
+        <ul class="footer__list">
+          <li><a href="#">Providers</a></li>
+          <li><a href="#">First Timers</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Recycle</a></li>
+        </ul>
+      </div> -->
+
+      <div class="footer__col">
+        <h4 class="footer__hd">SKINCARE:</h4>
+        <ul class="footer__list">
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Become A Wholesaler</a></li>
+          <li><a href="#">Volunteer Your Child</a></li>
+          <li><a href="#">Shipping + Returns</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col footer__col--signup">
+        <h4 class="footer__hd footer__hd--big">GET THE LATEST UPDATES</h4>
+        <form class="footer__signup" action="#" onsubmit="return false;">
+          <input class="footer__input" type="email" placeholder="Enter your email" aria-label="Email address">
+          <button class="footer__submit" type="button">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer__social">
+      <!-- simple inline SVG icons (veneer only) -->
+      <a href="#" aria-label="TikTok" class="icn">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M19 7.2a6.2 6.2 0 0 1-3.7-1.2v7.3a5.3 5.3 0 1 1-4.5-5.2v2.4a2.9 2.9 0 1 0 2.1 2.8V2h2.3c.3 1.6 1.6 3 3.8 3.3v1.9z"/></svg>
+      </a>
+      <a href="#" aria-label="Instagram" class="icn">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3.4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="#" aria-label="YouTube" class="icn">
+        <svg viewBox="0 0 24 24" width="26" height="18" fill="currentColor"><path d="M23 12s0-3.6-.5-5.3c-.3-1.1-1.2-2-2.3-2.2C18 4 12 4 12 4s-6 0-8.2.5C2.7 4.7 1.8 5.6 1.5 6.7 1 8.4 1 12 1 12s0 3.6.5 5.3c.3 1.1 1.2 1.9 2.3 2.2C6 20 12 20 12 20s6 0 8.2-.5c1.1-.3 2-1.1 2.3-2.2.5-1.7.5-5.3.5-5.3zM10 15.5v-7l6 3.5-6 3.5z"/></svg>
+      </a>
+      <a href="#" aria-label="Pinterest" class="icn">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12.1 2C7 2 4 5.4 4 9c0 2.9 1.7 4.6 2.6 4.6.4 0 .6-1 .6-1.3 0-.4-1-1.2-1-2.8 0-3.4 2.9-5.8 6.3-5.8 3 0 5.3 1.7 5.3 4.9 0 2.4-1.2 6.6-4.1 6.6-1.2 0-2.1-.9-1.8-2.1.3-1.3 1-2.8 1-3.8 0-.9-.5-1.6-1.5-1.6-1.2 0-2.1 1.3-2.1 3 0 1.1.4 1.8.4 1.8l-1.4 6c-.4 1.8-.1 4 .1 5.6h1.1c.2-.6.8-2.7.9-3.2.1-.5.6-2 .6-2 .6 1.1 2.1 1.9 3.6 1.9 4 0 6.7-3.7 6.7-8.6C21.8 5.7 17.7 2 12.1 2z"/></svg>
+      </a>
+    </div>
+
+    <div class="footer__legal">
+      <div class="footer__links">
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+      </div>
+      <div class="footer__stamp">© Whole Company 2025</div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="script.js" defer></script>
+</body>
+</html>
